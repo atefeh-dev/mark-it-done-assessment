@@ -1,5 +1,28 @@
 /** @format */
+label {
+  font-family: "Catamaran";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 120%;
+  /* or 20px */
 
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #909090;
+}
+input {
+  width: 352px;
+  height: 49px;
+  left: 1148px;
+  top: 4074px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 28px;
+}
 .book_now {
   width: 100vw;
   height: 856px;
