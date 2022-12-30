@@ -1,4 +1,11 @@
 /** @format */
+.popular_dish {
+  width: 1208px;
+  height: 723px;
+  margin: 74px auto;
+  background: #181110;
+  border: 1px solid #8d8d8d;
+}
 .line {
   height: 4px;
   width: 44px;
@@ -10,12 +17,35 @@
   margin-left: 80px;
   margin-top: -21px;
 }
+.item_menu {
+  border-bottom: 1px dashed #ffffff;
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  font-family: "Catamaran";
+  text-transform: uppercase;
+}
+h1 {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  /* identical to box height */
+  /* Main text */
+  margin-top: 0;
+  color: #ffffff;
+}
 .why_us_section {
+  align-items: center;
   .why_us {
     display: flex;
     flex-flow: row wrap;
 
-    width: 1208px;
+    width: 63vw;
     height: 555px;
     left: 356px;
     top: 1052px;
@@ -27,15 +57,6 @@
     .info {
       flex: 1;
       h1 {
-        font-family: "Roboto Slab";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 53px;
-        /* identical to box height */
-        /* Main text */
-        margin-top: 104px;
-        color: #ffffff;
         text-align: center;
       }
       p {
@@ -67,5 +88,40 @@
         filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.8));
       }
     }
+  }
+}
+.our_menu_section {
+  color: #fff;
+  box-sizing: border-box;
+  width: 1208px;
+  height: 1049px;
+  margin: 0 auto;
+  background: #181110;
+  border: 1px solid #8d8d8d;
+  text-align: unset !important;
+}
+@media (max-width: 1600px) {
+  .why_us_section .why_us {
+    height: 1020px;
+    width: 71vw;
+  }
+  .why_us_section .why_us .info p {
+    min-width: 620px;
+  }
+  .why_us_section .why_us .img_section {
+    margin-top: 17px;
+  }
+  .line {
+    margin: -16px auto;
+  }
+}
+@media (max-width: 800px) {
+  .why_us_section .why_us {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .why_us_section .why_us {
+    flex-direction: column;
   }
 }
