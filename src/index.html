@@ -63,14 +63,20 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Catamaran&family=Quicksand&family=Roboto+Slab:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Catamaran&family=Quicksand&family=Roboto+Slab&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Catamaran&family=Quicksand&family=Roboto+Slab:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Catamaran&family=Quicksand&family=Roboto+Slab:wght@300;400&display=swap"
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="favicon.ico?v=1.0.0" />
@@ -172,27 +178,18 @@
       </div>
     </section>
     <section class="our_menu_section">
-      <div style="display: flex; justify-content: space-between" ;>
+      <div style="display: flex; justify-content: space-between" id="dish_menu">
         <span class="title">
           <h1 style="margin-top: 0">Our Menu</h1>
           <div class="line" style="margin-left: 4px"></div>
         </span>
         <div style="display: flex; align-items: center; gap: 45px">
-          <span class="item_menu">starter</span>
-          <span class="item_menu">main dishes</span>
-          <span class="item_menu">desserts</span>
+          <a class="item_menu" style="color: #ff4800">starter</a>
+          <a class="item_menu">main dishes</a>
+          <a class="item_menu">desserts</a>
         </div>
       </div>
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          margin-top: 74px;
-
-          border-bottom: 1px solid #262626;
-          line-height: 38px;
-        "
-      >
+      <div class="items" style="margin-top: 74px">
         <div>
           <h4
             style="
@@ -240,16 +237,7 @@
           $35
         </div>
       </div>
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          margin-top: 15px;
-
-          border-bottom: 1px solid #262626;
-          line-height: 38px;
-        "
-      >
+      <div class="items">
         <div>
           <h4
             style="
@@ -298,16 +286,7 @@
         </div>
       </div>
 
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          margin-top: 15px;
-
-          border-bottom: 1px solid #262626;
-          line-height: 38px;
-        "
-      >
+      <div class="items">
         <div>
           <h4
             style="
@@ -357,15 +336,7 @@
         </div>
       </div>
 
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          margin-top: 15px;
-          border-bottom-bottom: 1px solid #262626;
-          line-height: 38px;
-        "
-      >
+      <div class="items">
         <div>
           <h4
             style="
@@ -414,15 +385,7 @@
         </div>
       </div>
 
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          margin-top: 15px;
-          border-bottom-bottom: 1px solid #262626;
-          line-height: 38px;
-        "
-      >
+      <div class="items">
         <div>
           <h4
             style="
@@ -471,15 +434,7 @@
         </div>
       </div>
 
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          margin-top: 15px;
-          border-bottom-bottom: 1px solid #262626;
-          line-height: 38px;
-        "
-      >
+      <div class="items">
         <div>
           <h4
             style="
@@ -528,15 +483,7 @@
         </div>
       </div>
 
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          margin-top: 15px;
-          border-bottom-bottom: 1px solid #262626;
-          line-height: 38px;
-        "
-      >
+      <div class="items">
         <div>
           <h4
             style="
@@ -586,15 +533,7 @@
         </div>
       </div>
 
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          margin-top: 15px;
-          border-bottom-bottom: 1px solid #262626;
-          line-height: 38px;
-        "
-      >
+      <div class="items">
         <div>
           <h4
             style="
@@ -644,14 +583,7 @@
         </div>
       </div>
 
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          margin-top: 15px;
-          line-height: 38px;
-        "
-      >
+      <div class="items" style="border-bottom: unset">
         <div>
           <h4
             style="
@@ -706,8 +638,10 @@
           display: flex;
           justify-content: space-between;
           margin-bottom: 70px;
+          flex-wrap: wrap;
         "
         ;
+        id="dish_menu"
       >
         <span class="title">
           <h1 style="margin-top: 0; margin-left: 17px">
@@ -715,7 +649,14 @@
           </h1>
           <div class="line" style="margin-left: 30px"></div>
         </span>
-        <div style="display: flex; align-items: center; gap: 30px">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            justify-content: center;
+          "
+        >
           <span><img src="./images/larrow.png" /></span>
           <span style="font-size: 22px; color: white">
             <span style="color: red">1</span>/3</span
@@ -723,7 +664,10 @@
           <span><img src="./images/rarrow.png" /></span>
         </div>
       </div>
-      <div style="display: flex; align-items: center; color: white">
+      <div
+        style="display: flex; align-items: center; color: white"
+        id="pop_dish_mob"
+      >
         <div style="flex: 1">
           <img
             style="
@@ -796,9 +740,10 @@
           display: flex;
           justify-content: space-between;
         "
+        id="book_table_mob"
       >
         <div>
-          <span class="title">
+          <span class="title" id="book_title">
             <h1 style="margin-top: 0">Book a Table</h1>
             <div class="line" style="margin-left: 4px"></div>
           </span>
@@ -838,30 +783,36 @@
             padding: 62px;
             margin-left: 75px;
           "
+          id="register_form  "
         >
           <label>your name</label>
           <input type="text" />
           <label>your phone</label>
           <input type="text" />
           <label>date</label>
-          <input type="time" />
+          <input type="date" />
           <label>time</label>
-          <input type="text" />
+          <input type="time" />
           <label>number of people</label>
-          <div style="display: flex; justify-content: space-between;  width: 352px;
-  height: 49px;
-  left: 1148px;
-  padding-left:5px;
-  padding-right: 5px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  margin-bottom: 28px;
-  align-items: center;">
-          <span><img src="./images/mi.png"/></span>
-          <span style="color: white;">1</span>
-          <span><img src="./images/+.png"/></span>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              width: 352px;
+              height: 49px;
+              left: 1148px;
+              padding-left: 15px;
+              padding-right: 15px;
+              background: rgba(255, 255, 255, 0.1);
+              border: 1px solid rgba(255, 255, 255, 0.2);
+              margin-bottom: 28px;
+              align-items: center;
+            "
+          >
+            <span><img src="./images/mi.png" /></span>
+            <span style="color: white">1</span>
+            <span><img src="./images/+.png" /></span>
           </div>
-        </input>
           <button
             style="
               height: 51px;

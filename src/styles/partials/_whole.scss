@@ -1,4 +1,35 @@
 /** @format */
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #262626;
+  line-height: 38px;
+}
+input {
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(../../images/flaticon1568677092-svg.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(../../images/access\ time.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}
 label {
   font-family: "Catamaran";
   font-style: normal;
@@ -50,23 +81,23 @@ input {
 }
 .item_menu {
   border-bottom: 1px dashed #ffffff;
-  font-family: Catamaran;
+  font-family: "Catamaran", sans-serif;
   font-size: 24px;
-  font-weight: 400;
   line-height: 39px;
   letter-spacing: 0.02em;
-  text-align: left;
-  font-family: "Catamaran";
   text-transform: uppercase;
+
+  /* Secondary text */
+  :active {
+    color: #ff4800;
+  }
 }
 h1 {
-  font-family: Roboto Slab;
-  font-style: normal;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 53px;
-  /* identical to box height */
-  /* Main text */
+
   margin-top: 0;
   color: #ffffff;
 }
@@ -132,25 +163,73 @@ h1 {
   text-align: unset !important;
 }
 @media (max-width: 1600px) {
-  .why_us_section .why_us {
-    height: 1020px;
-    width: 71vw;
-  }
   .why_us_section .why_us .info p {
-    min-width: 620px;
+    width: auto;
+    word-break: break-word;
   }
+  .popular_dish {
+    width: 93vw;
+    height: auto;
+  }
+  #pop_dish_mob {
+    flex-direction: column !important;
+    height: auto;
+  }
+  #book_table_mob {
+    flex-direction: column;
+  }
+  .item_menu {
+    font-size: 19px;
+  }
+  .why_us_section .why_us {
+    height: 1000px;
+    width: 93vw;
+    margin-top: 234px;
+    margin: 0 auto;
+  }
+  .our_menu_section {
+    width: 93vw;
+    height: auto;
+  }
+
   .why_us_section .why_us .img_section {
     margin-top: 17px;
   }
   .line {
     margin: -16px auto;
   }
-}
-@media (max-width: 800px) {
-  .why_us_section .why_us {
+  #dish_menu {
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    /* gap: 26px; */
     flex-direction: column;
+    margin: 0 auto;
+    gap: 32px;
+    text-align: center;
+    justify-content: center;
+  }
+  .line {
+    margin-left: auto !important;
+    margin: -15px auto;
+  }
+  .why_us_section .why_us .info h1 {
+    text-align: center;
+    margin-top: 88px;
   }
 }
+// @media (max-width: 800px) {
+//   .why_us_section .why_us {
+//     height: 1020px;
+//     width: 71vw;
+//   }
+//   .why_us_section .why_us .img_section img {
+//     width: 460px;
+//     height: 532px;
+//   }
+//   .why_us_section .why_us {
+//     flex-direction: column;
+//   }
+// }
 @media (max-width: 500px) {
   .why_us_section .why_us {
     flex-direction: column;
